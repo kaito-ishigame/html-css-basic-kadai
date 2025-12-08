@@ -34,7 +34,7 @@ h1 .pink {
 }
 
 /* 「侍太郎」「1990年1月1日」「O型」を太字に */
-#basic {
+#basic > p {
   font-weight: bold;
 }
 
