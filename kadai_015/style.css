@@ -1,0 +1,49 @@
+/* htmlのフォントサイズ20px */
+html {
+    font-size: 20px;
+}
+
+/* bodyのフォント種類：「"Arial", "Meiryo", sans-serif */
+/* すべてのテキストは中央寄せになっている */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  /* フォント： Josefin Sans,sans-serif*/
+  font-family: "Josefin Sans", sans-serif;
+  /* フォントサイズ：ルート要素の2倍 */
+  font-size: 2rem;
+  /* h1の文字間：1.2倍 */
+  letter-spacing: 1.2em;
+  /* h1影：任意 */
+  text-shadow: 2px 2px 4px #ff1493;
+  /* h1下の直線：3px（カラー：rgb(115, 115, 114) */
+  border-bottom: solid  3px rgb(115, 115, 114);
+}
+
+/* 「MY PROFILE」の「M」をスカイブルー */
+h1 .blue {
+  color: skyblue;
+}
+ 
+/* 「MY PROFILE」の「P」をrgb(255, 192, 203) */
+h1 .pink {
+  color: rgb(255, 192, 203);
+}
+
+/* 「侍太郎」「1990年1月1日」「O型」を太字に */
+#basic {
+  font-weight: bold;
+}
+
+/* rgb(255, 192, 203) */
+.pink{
+  color: rgb(255, 192, 203);
+}
+
+/* スカイブルー */
+.blue {
+ color: skyblue; 
+}
