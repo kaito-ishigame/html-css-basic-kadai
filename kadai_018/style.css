@@ -1,0 +1,109 @@
+/* ----------step3---------- */
+
+/* topに対する装飾 */
+/* 横幅800px,背景色を「 #dcc9f4」, 上下に20pxの余白,画面の中央に配置,p要素が中央揃え*/
+#top {
+  width: 800px;
+  background-color: #dcc9f4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* p要素に対する装飾 */
+/* 横幅を親要素の20%,背景色「#ffd9df」,3つの要素が横並び */
+.top-child {
+  width: 20%;
+  background-color: #ffd9df;
+  display: inline-block;
+}
+
+/* ----------step4---------- */
+
+/* id名「middle」に対する装飾 */
+/* 横幅・高さ800px, 上下に20pxの余白,画面の中央に配置,背景色を「#ffd9df 」,*/
+#middle {
+  width: 800px;
+  height: 800px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffd9df;
+}
+
+/* （class名d名「middle-child01」「middle-child02」「middle-child03」）に対する装飾 */
+/* 横幅を200px,高さを200px,背景色を「#87ceeb」*/
+
+#middle {
+  /* ここで親要素起点に */
+  position: relative; 
+}
+
+/* 「middle-child01」）は、親要素のdiv要素（id名「middle」）の上から100px、左から100px距離を取った場所に配置 */
+#middle-child01 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+/* （id名「middle-child02」）は、親要素のdiv要素（id名「middle」）の上から300px、左から300px距離を取った場所に配置 */
+#middle-child02 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+/* （id名「middle-child03」）は、親要素のdiv要素（id名「middle」）の上から500px、左から500px距離を取った場所に配置*/
+#middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+
+/* ----------step5---------- */
+
+/* （id名「bottom」）に対する装飾 */
+/* 横幅を800px,高さを300px,画面の中央に配置, 背景色を「#87ceeb」*/
+#bottom {
+  width: 800px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #87ceeb;
+}
+
+/*（id名「bottom-child01」「bottom-child02」「bottom-child03」）に対する共通の装飾 */
+/* 横幅を400px,高さを100px, 背景色を「#e5dcf0」*/
+
+#bottom-child01 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+}
+
+/*（id名「bottom-child02」）は、本来の表示場所の左から200pxずらして配置 */
+#bottom-child02 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  position: relative;
+  left: 200px;
+  
+}
+/*（id名「bottom-child03」）は、本来の表示場所の左から400pxずらして配置 */
+#bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  position: relative;
+  left: 400px;
+}
