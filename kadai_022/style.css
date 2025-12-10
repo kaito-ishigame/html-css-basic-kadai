@@ -1,0 +1,139 @@
+/* --------------------STEP3-------------------- */
+
+/* h1要素の上下左右余白(margin)を0にする */
+/* 文字色をrgb(255, 255, 255) */
+h1{
+  margin: 0px;
+  color: rgb(255, 255, 255);
+}
+
+/* p要素の上下左右余白(margin)を0にする */
+/* p要素のフォントサイズ20px */
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+/* body要素の上下左右余白(margin)を0にする */
+body {
+  margin: 0px;
+}
+
+
+/* a要素のフォントサイズ20px */
+a {
+  font-size: 20px;
+}
+
+/* --------------------STEP4-------------------- */
+/* header：下の余白を20px,背景色「 rgb(244, 79, 79)」, 中央揃え*/
+header {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --------------------STEP5-------------------- */
+/* main要素内の余白を上下左右10px */
+main {
+  padding: 10px;
+}
+
+/* id:parent　
+・displayプロパティを使い、id名parentの要素をFlexコンテナに
+・justify-contentプロパティでFlexboxコンテナの子要素（Flexアイテム）「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定
+ */
+ #parent {
+  display: flex;
+  justify-content: space-around;
+ }
+
+ /* class:contens
+ ・線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲う
+ ・幅は親要素の25%。プロパティはwidthではなく、flex-basis。
+ ・要素内の余白は上下10px、左右15px。
+ ・要素外の余白は上下20px、左右0。
+ ・中の要素が中央揃え。
+ */
+ .contents {
+  border: 3px solid rgb(238, 204, 204);
+  padding: 10px 15px 10px 15px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+ }
+
+ /* h2要素
+ ・h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）
+ ・h2要素の前に「●」記号を表示します。色はrgb(239, 111, 139)
+ */
+ h2 {
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122);
+ }
+ h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+ }
+
+ /* class:contents　二番目のp要素内のテキストの中で一番目の文字に以下設定
+ ・太字
+ ・文字色はrgb(97, 206, 249)
+ */
+ .contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+ }
+
+ /* class:contents内のimg
+ ・marginは上下10px、左右0
+ ・幅は70%
+ */
+ .contents img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+ }
+
+/* --------------------STEP6-------------------- */
+/* footer
+・背景色はrgb(244, 79, 79)
+・中身の要素が中央揃え
+ */
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+/* a
+・文字色はrgb(255, 255, 255)
+・訪問済みリンクの文字色がrgb(193, 234, 251)に変化
+・マウスカーソルが乗ると文字色がrgb(245, 178, 168)
+ */
+ footer a:link {
+  color: rgb(255, 255, 255);
+ }
+
+ footer a:visited {
+  color: rgb(193, 234, 251);
+ }
+
+ footer a:hover {
+  color: rgb(245, 178, 168);
+ }
+
+/* --------------------STEP7-------------------- */
+/* レスポンシブ：画面幅768px以下になったら表示が変わるようにブレークポイントを設定
+・h2のフォントサイズは30px
+・pのフォントサイズは25px
+・Flexboxコンテナであるid名parent内の要素が縦に並ぶ
+*/
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #parent {
+    display: block;
+  }
+}
